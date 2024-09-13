@@ -1,0 +1,418 @@
+body , html{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(69, 69, 69);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bg1{    /* For the background image*/
+    width: 100vw;
+    height: 80vh;
+    filter:brightness(40%);
+    position: relative;
+}
+
+.first { /* Container for the logo, lang, and sign */
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between elements */
+    align-items:center;            /* Aligns them vertically in the center */
+    position: absolute;             /* Used because the components should come on up of the bg*/
+    top: 10px;                      /* Adjust this to position it from the top */
+    left:0;
+    right:10px;       
+    width:100%;
+    padding: 0;      /* Adjusts the width to stretch across the container */
+}
+.logo{
+    width:110px;
+    height:110px;
+    margin-left: 190px;                  
+}
+
+.btn1{ /* Container for both the buttons */
+    display: flex;
+    gap: 20px;  /* Controls spacing between the buttons */
+    margin-right: 200px;
+    
+}
+
+.lang {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(31, 30, 30)   ;
+    color: aliceblue;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.sign{
+    width: 80px;
+    height: 30px;
+    color: aliceblue;
+    background-color: rgb(197, 9, 9)  ;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.t1{ /* For the first line on site*/ 
+    position: absolute; /* Used because the components should come on up of the bg*/
+    color: rgb(235, 239, 243);
+    font-size: 30px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.t2{
+    position: absolute;/* Used because the components should come on up of the bg*/
+    font-size: 18px;
+    color: antiquewhite;
+    padding-top: 65px; /* used to keep gap from the t1 element*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.t3{
+    position: absolute;/* Used because the components should come on up of the bg*/
+    font-size: 15px;
+    color: antiquewhite;
+    padding-top: 115px; /* used to keep gap from the t1 element*/
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+
+}
+
+.email-box{ /* Contains email button and get started vala*/
+    position: absolute;/* Used because the components should come on up of the bg*/
+    padding-top: 200px; /* used to keep gap from the t1 element*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.email{
+    text-align: left;
+    color: rgb(224, 222, 221);
+    width: 300px;
+    height: 41px;
+    background-color: rgba(44, 42, 42, 0.7); /* Adjust the last value (alpha) for transparency */
+    
+    border: none; /* Removes border */
+    cursor: pointer; /* Adds pointer cursor on hover */ 
+}
+
+#input{
+    width: 290px;
+    height: 41px;
+    background-color: rgba(44, 42, 42, 0.7);
+    filter: brightness(40%);
+    border: none; /* Removes border */
+    padding-left: 0px; /* Adds padding to align text inside */
+    color: rgb(224, 222, 221); /* Text color inside input */
+}
+
+#input::placeholder {
+    color: rgb(224, 222, 221); /* Placeholder text color */
+}
+
+.start{
+    text-align: left;
+    color: rgb(224, 222, 221);
+    width: 150px;
+    height: 41px;
+    background-color: rgb(197, 9, 9);
+}
+
+section{  /* for the 2nd slide*/
+    background-color: rgb(12, 8, 8);
+
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between; /* to keep space between image and text*/
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+
+
+.div1{
+    width:80vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.div2{
+    position: relative;
+    color: aliceblue;
+    align-content: flex-start;
+    left: 190px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.t4{
+    font-size: 35px;
+}
+
+.t5{
+    font-size: 15px;
+}
+
+.div3{
+   position: relative;
+}
+
+.tv{
+    width: 300px;
+    height: 300px;
+    justify-content: flex-end;
+}
+
+.video1{
+    position: absolute; /* Position the video on top of the TV */
+    top: 7%; /* Adjust to align the video properly with the TV screen */
+    left: 6%; /* Adjust for horizontal alignment */
+    width: 88%; /* Adjust the width to fit the TV screen */
+    height: 75%; /* Adjust the height to fit the TV screen */
+    z-index: 1; /* Ensure the video stays on top */
+}
+
+section{  /* for the 3rd slide*/
+    background-color: rgb(12, 8, 8);
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center; /* to keep space between image and text*/
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+.bg2{
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    filter:brightness(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+
+.div6{ /* this div contains both the texts*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: column
+    
+}
+
+.t6{
+    text-align: center;
+    color: antiquewhite;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 36px;
+}
+
+.t7{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+section{ /* for the 4th slide*/
+    background-color: rgb(12, 8, 8);
+    width: 100vw;
+    height: 60vh;
+}
+
+.div7{ /* div for both the text and image*/ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 40vh;
+}
+
+.div8{ /*for only texts*/
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.t8{
+    text-align: center;
+    color: antiquewhite;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 36px;
+}
+
+.t9{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.div9{ /*for the image and that video*/
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.div9 img{
+    width: 290px;
+    height: 190px;
+    position: relative;
+}
+
+.div9 video{
+    position: absolute;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.div9 img{
+    width: 290px;
+    height: 190px;
+}
+
+.div9 video{
+    position: absolute;
+    top: 10px; /* Align the video to the top of the image */
+    left: 6px; /* Align the video to the left of the image */
+    width: 96%; /* Make the video cover the entire width of the image */
+    height: 74%; /* Make the video cover the entire height of the image */
+    z-index: 1; /* Ensure the video stays above the image */
+    object-fit: cover; /* Ensure the video scales correctly without distortion */
+}
+
+.slide5{ /* 5th slide*/
+    background-color: rgb(12, 8, 8);
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bg3{
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    filter:brightness(40%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.div10{/* container inside the section*/
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.div11{ /*container for the image*/
+    align-items: flex-start;
+    position: relative;
+}
+
+.div11 img{
+    width: 500px;
+    height: 289px;
+}
+
+.div12{ /* container for the text*/ 
+    align-content: flex-end;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.t10{
+    text-align: center;
+    color: antiquewhite;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 36px;
+}
+
+.t11{
+    color: aliceblue;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+.slide6{ /* for the 4th slide*/
+    background-color: rgb(12, 8, 8);
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide6 img{
+    width: 220px;
+    height: 100px;
+}
